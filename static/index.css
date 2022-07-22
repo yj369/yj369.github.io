@@ -1,0 +1,326 @@
+/* CSS global resets section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Poster container section */
+#poster-container{
+    width: 100%;
+    height: 100%;
+}
+
+#poster-wrapper{
+    width: 100%;
+    height: 100%;
+    background-image: url('./imgs/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.front-element-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    animation-name: front-element-animation;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 1.5s;
+}
+
+@keyframes front-element-animation {
+    0%{
+        top: 100%;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+.front-element-layer > .front-element-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.front-element-layer > .front-element-wrapper > img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.sky-cloud-element-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    animation: sky-cloud-element-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-delay: 4s;
+}
+
+@keyframes sky-cloud-element-animation {
+    0% {
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.sky-cloud-element-layer > .sky-cloud-element-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.sky-cloud-element-layer > .sky-cloud-element-wrapper > img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+}
+
+.pavilion-element-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    animation-name: pavilion-element-animation;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+}
+
+@keyframes pavilion-element-animation {
+    0%{
+        top: 100%;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+.pavilion-element-layer > .pavilion-element-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.pavilion-element-layer > .pavilion-element-wrapper > img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.cloud-shadow-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    animation-name: cloud-shadow-layer-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-delay: 2.5s;
+}
+
+@keyframes cloud-shadow-layer-animation {
+    0%{
+        top: 100%;
+    }
+    100%{
+        top: 0;
+    }
+}
+    
+
+.cloud-shadow-layer > .cloud-shadow-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.cloud-shadow-layer > .cloud-shadow-wrapper > img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 10%;
+    opacity: 0.6;
+}
+
+.cloud-background-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    animation-name: cloud-background-animation;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 2.5s;
+}
+
+@keyframes cloud-background-animation {
+    0%{
+        top: 100%;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+
+.cloud-background-layer > .cloud-background-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.cloud-background-layer > .cloud-background-wrapper > img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+#top-central-layer{
+    width: 100%;
+    min-width: 200px;
+    height: 72%;
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.seal-container{
+    width: 30px;
+    height: 30px;
+}
+
+.seal-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.art-writing-layer{
+    width: 120px;
+    height: 300px;
+    background-image: url('./imgs/qixi.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 80%;
+    animation-name: art-writing-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+}
+
+@keyframes art-writing-animation {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.6);
+    }
+    60%{
+        transform: scale(1);
+    }
+    70%{
+        transform: scale(1.4);
+    }
+    75%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.poem-layer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poem-layer > p {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 6px;
+    color: #955941;
+}
+
+.poem-layer > p:nth-child(1){
+    margin-top: 60px;
+}
+
+.character-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    animation-name: character-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-delay: 4s;
+}
+
+@keyframes character-animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.character-layer > .character-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.character-layer > .character-wrapper > img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+}
+
+.blossom-flower-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.blossom-flower-layer > .blossom-flower-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.blossom-flower-layer > .blossom-flower-wrapper > img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 30%;
+}
